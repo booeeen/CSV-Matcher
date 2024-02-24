@@ -5,8 +5,8 @@ $filterdObjectsFile = "..." # Path where the data should be saved (csv file)
 $csvContent1 = Import-CSV -Path $csv1Path -Delimiter ";"
 $csvContent2 = Import-CSV -Path $csv2Path -Delimiter ";"
 
-$data1 = $csvContent1 | Select-Object Anzeigename
-$data2 = $csvContent2 | Select-Object Anzeigename
+$data1 = $csvContent1 | Select-Object Anzeigename # Anzeigename is just an example, feel free to modify it
+$data2 = $csvContent2 | Select-Object Anzeigename # Anzeigename is just an example, feel free to modify it
 $doubleCounter = 0
 
 foreach ($item1 in $data1) 
